@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Button with Custom Cursor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .modern-button {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .modern-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Custom cursor */
+        .modern-button:hover {
+            cursor:none /* Hide default cursor */
+        }
+
+        /* Using a pseudo-element to create the star cursor */
+        .star-cursor {
+            position: absolute;
+            pointer-events: none; /* Prevent the cursor from interfering with the button */
+            font-size: 24px; /* Adjust size of the star */
+            color: #ffcc00; /* Color of the star */
+            transition: transform 0.1s ease; /* Smooth movement */
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <button class="modern-button">Click Me</button>
+    <div class="star-cursor">*</div>
+
+    <script>
+        const button = document.querySelector('.modern-button');
+        const starCursor = document.querySelector('.star-cursor');
+
+        // Show the star cursor on button hover
+        button.addEventListener('mouseenter', () => {
+            starCursor.style.display = 'block';
+        });
+
+        button.addEventListener('mouseleave', () => {
+            starCursor.style.display = 'none';
+        });
+
+        // Update the position of the star cursor
+        document.addEventListener('mousemove', (e) => {
+            starCursor.style.left = e.pageX + 'px';
+            starCursor.style.top = e.pageY + 'px';
+            starCursor.style.transform = 'translate(-50%, -50%)'; // Center the star cursor
+        });
+    </script>
+</body>
+</html>
