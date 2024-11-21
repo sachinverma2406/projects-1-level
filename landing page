@@ -1,0 +1,219 @@
+<html>
+ <head>
+  <title>
+   Sachin Verma - Landing Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .header {
+            background-color: #0f0;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .header h1 {
+            margin: 0;
+            color: #000;
+            position: relative;
+            animation: slide-in 3s forwards;
+        }
+        .header h1 span {
+            color: #000;
+            transition: color 3s;
+        }
+        .header h1 span.verma {
+            color: red;
+        }
+        @keyframes slide-in {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: #0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://i.pinimg.com/736x/67/89/65/6789655ea7573da7b4093d572131c237.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0 0;
+        }
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .content .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .content .card {
+            background-color: #111;
+            border: 1px solid #0f0;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+        }
+        .content .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .content .card h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .content .card p {
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .footer .social-icons {
+            margin: 10px 0;
+        }
+        .footer .social-icons a {
+            color: #0f0;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <h1>
+    I am <span class="verma">Sachin Verma</span>
+   </h1>
+  </div>
+  <div class="nav">
+   <a href="#home">
+    Home
+   </a>
+   <a href="#about">
+    About
+   </a>
+   <a href="#services">
+    Services
+   </a>
+   <a href="#portfolio">
+    Portfolio
+   </a>
+   <a href="#contact">
+    Contact
+   </a>
+  </div>
+  <div class="hero">
+   <h2>
+    Welcome to My World
+   </h2>
+   <p>
+    Discover my projects and skills
+   </p>
+  </div>
+  <div class="content" id="about">
+   <h2>
+    About Me
+   </h2>
+   <p>
+    Hi, I'm Sachin Verma, a passionate developer with expertise in web development and design.
+   </p>
+   <div class="cards">
+    <div class="card">
+     <img alt="Image of Sachin Verma working on a laptop" height="200" src="https://storage.googleapis.com/a1aa/image/LhPpuU2SA0obHRRpB2xDz4Tc0SjxiI0Z5mQv0YfmJgVMco5JA.jpg" width="300"/>
+     <h3>
+      Web Development
+     </h3>
+     <p>
+      I create responsive and dynamic websites using the latest technologies.
+     </p>
+    </div>
+    <div class="card">
+     <img alt="Image of a modern web design layout" height="200" src="https://storage.googleapis.com/a1aa/image/rZDWGXI8S36XIRlQj7dh2gqzBNNSqwgc3bDv6qZ1LZZGO08E.jpg" width="300"/>
+     <h3>
+      Web Design
+     </h3>
+     <p>
+      Designing visually appealing and user-friendly interfaces is my forte.
+     </p>
+    </div>
+    <div class="card">
+     <img alt="Image of code on a computer screen" height="200" src="https://storage.googleapis.com/a1aa/image/uyPbNLLv95YtDFfnLxJ5e7gC8XEMsL0BYg9O7RTXTWpW4QzTA.jpg" width="300"/>
+     <h3>
+      Programming
+     </h3>
+     <p>
+      Proficient in various programming languages to build robust applications.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    © 2023 Sachin Verma. All rights reserved.
+   </p>
+   <div class="social-icons">
+    <a href="https://facebook.com">
+     <i class="fab fa-facebook-f">
+     </i>
+    </a>
+    <a href="https://twitter.com">
+     <i class="fab fa-twitter">
+     </i>
+    </a>
+    <a href="https://linkedin.com">
+     <i class="fab fa-linkedin-in">
+     </i>
+    </a>
+    <a href="https://github.com">
+     <i class="fab fa-github">
+     </i>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>
